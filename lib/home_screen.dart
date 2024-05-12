@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Container(
+                                      child: SizedBox(
                                         height: screenHeight * 0.15,
                                         width: double.infinity,
                                         child: Card(
@@ -157,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ingredients: snapshot.data!.recipes![index].ingredients.toString(),
                                               name: snapshot.data!.recipes![index].name.toString(), cookTimeMinutes: snapshot.data!.recipes![index].cookTimeMinutes.toString(), cuisine: snapshot.data!.recipes![index].cuisine.toString(), difficulty: snapshot.data!.recipes![index].difficulty.toString(), instructions: snapshot.data!.recipes![index].instructions.toString(), prepTimeMinutes: snapshot.data!.recipes![index].prepTimeMinutes.toString())));
                                         },
-                                        child: Container(
+                                        child: SizedBox(
                                           height: screenHeight * 0.15,
                                           width: double.infinity,
                                           child: Card(
@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           .image.toString()
                                                       ),
                                                       errorBuilder: (context, error, stackTrace) {
-                                                        return Text('Failed to load image');
+                                                        return const Text('Failed to load image');
                                                       },
                                                       fit: BoxFit.cover,
                                                     ),
@@ -240,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           ),
                                                         ],
                                                       ),
-                                                      SizedBox(height: 12,),
+                                                      const SizedBox(height: 12,),
                                                       Row(
                                                         children: [
                                                           const Icon(
@@ -323,7 +323,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ingredients: snapshot.data!.recipes![index].ingredients.toString(),
                                               name: snapshot.data!.recipes![index].name.toString(), cookTimeMinutes: snapshot.data!.recipes![index].cookTimeMinutes.toString(), cuisine: snapshot.data!.recipes![index].cuisine.toString(), difficulty: snapshot.data!.recipes![index].difficulty.toString(), instructions: snapshot.data!.recipes![index].instructions.toString(), prepTimeMinutes: snapshot.data!.recipes![index].prepTimeMinutes.toString())));
                                         },
-                                        child: Container(
+                                        child: SizedBox(
                                           height: screenHeight * 0.15,
                                           width: double.infinity,
                                           child: Card(
@@ -402,7 +402,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           ),
                                                         ],
                                                       ),
-                                                      SizedBox(height: 1,),
+                                                      const SizedBox(height: 1,),
                                                       Row(
                                                         children: [
                                                           const Icon(
