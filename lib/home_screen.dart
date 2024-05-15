@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
           automaticallyImplyLeading: false,
           backgroundColor: const Color(0xffEF2A39),
           title: Text("Recipe App",
-              style: GoogleFonts.aladin(
+              style: GoogleFonts.lilitaOne(
                   textStyle: const TextStyle(
                     fontSize: 30,
                 color: Colors.white,
@@ -167,24 +167,24 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.only(top: 8.0,left: 8,bottom: 8),
-                                                  child: Container(
-                                                    height: screenHeight * 0.30,
-                                                    width: screenWidth * 0.30,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              20),
-                                                    ),
-                                                    child: Image(
-                                                      image: NetworkImage(snapshot
-                                                          .data!
-                                                          .recipes![index]
-                                                          .image.toString()
+                                                  child: ClipRRect(
+                                                      borderRadius: BorderRadius.circular(20),
+                                                 child: Container(
+                                                      height: screenHeight * 0.30,
+                                                      width: screenWidth * 0.30,
+                                                      decoration: BoxDecoration(
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                                20),
                                                       ),
-                                                      errorBuilder: (context, error, stackTrace) {
-                                                        return const Text('Failed to load image');
-                                                      },
-                                                      fit: BoxFit.cover,
+                                                      child: Image(
+                                                        image: NetworkImage(snapshot
+                                                            .data!
+                                                            .recipes![index]
+                                                            .image.toString()
+                                                        ),
+                                                        fit: BoxFit.cover,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -266,7 +266,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           Text(
                                                             snapshot
                                                                 .data!
-                                                                .recipes![0]
+                                                                .recipes![index]
                                                                 .rating
                                                                 .toString(),
                                                             style: GoogleFonts.abel(

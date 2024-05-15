@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:recipe_app/loginScreen.dart';
 import 'home_screen.dart';
 import 'dart:math' as math;
 
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     super.initState();
     Timer(const Duration(seconds: 3),
             ()=>Navigator.push(context,
-            MaterialPageRoute(builder: (context)=>const HomeScreen())));
+            MaterialPageRoute(builder: (context)=>const LoginScreen())));
 
   }
   @override
@@ -57,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                       width: 200,
                       child: const Center(
                         child: Image(
-                          image: AssetImage("images/recipe2.png"),
+                          image: AssetImage("assets/images/recipe2.png"),
                         ),
                       ),
                     ),
