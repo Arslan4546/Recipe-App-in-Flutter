@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:recipe_app/loginScreen.dart';
-import 'home_screen.dart';
 import 'dart:math' as math;
 
 class SplashScreen extends StatefulWidget {
@@ -16,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
 
   late final AnimationController _controller = AnimationController(
 
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 15),
       vsync: this)..repeat();
 
   @override
